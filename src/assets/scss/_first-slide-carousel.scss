@@ -1,0 +1,25 @@
+.first-slide-carousel {
+
+}
+
+.first-slide-carousel__img {
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 620px;
+  height: 600px;
+  display: block;
+}
+
+.test {
+  //background: url("../img/container-img.svg") no-repeat center;
+  //background-size: 100% auto;
+  background: #C4C4C4;
+  width: 618px;
+  height: 575px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}

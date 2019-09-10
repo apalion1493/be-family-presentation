@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300i,400,400i,500,500i,700,700i&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<section class="section first-slide">
+    <div class="container header">
+        <div class="row">
+            <div class="col-5">
+                <div class="header-logo">
+                    <a class="header-logo__wd" href="#"></a>
+                    <a class="header-logo__bf" href="#"></a>
+                </div>
+            </div>
+            <div class="col-7">
+                <div class="menu-burger">
+                    <span class="menu-burger__icon menu-burger__icon-first"></span>
+                    <span class="menu-burger__icon menu-burger__icon-second"></span>
+                    <span class="menu-burger__icon menu-burger__icon-three"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="main-text">
+                    <span class="main-text__title-first">Сервис, который помогает</span>
+                    <h1 class="main-text__title-second">Создать единый образ семьи</h1>
+                    <p class="main-text__title-desc">Узнайте как мы это сделали</p>
+                </div>
+            </div>
+            <div class="col-6">
+                <div>
+                    <div class="vector-first-slide-block">
+                        <span class="vector-first-slide vector-first-slide_turquoise"></span>
+                        <span class="vector-first-slide vector-first-slide_orange"></span>
+                        <span class="vector-first-slide vector-first-slide_purple"></span>
+                    </div>
+                    <div class="first-slide-wrap">
+                        <div class="first-slide-carousel">
+                            <span class="first-slide-carousel__img" style="background-image: url(assets/img/header-1.png)"></span>
+                            <span class="first-slide-carousel__img" style="background-image: url(assets/img/header-1.png)"></span>
+                            <span class="first-slide-carousel__img" style="background-image: url(assets/img/header-1.png)"></span>
+                            <span class="first-slide-carousel__img" style="background-image: url(assets/img/header-1.png)"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="first-slide-container">
+        <div class="first-slide__text-shadow first-slide__text-shadow-first">
+            <span class="first-slide__text-bg first-slide__text-bg-first">creative</span>
+        </div>
+        <div class="first-slide__text-shadow first-slide__text-shadow-second">
+            <span class="first-slide__text-bg first-slide__text-bg-second">Style</span>
+        </div>
+        <div class="first-slide__text-shadow first-slide__text-shadow-third">
+            <span class="first-slide__text-bg first-slide__text-bg-third">FAMILY</span>
+        </div>
+        <div class="first-slide__text-shadow first-slide__text-shadow-fourth">
+            <span class="first-slide__text-bg first-slide__text-bg-fourth">clothes</span>
+        </div>
+    </div>
+    <div>
+
+    </div>
+
+</section>
+
+
+
+
+<script src="assets/js/jquery/jquery.min.js"></script>
+<script src="assets/js/bootstrap/bootstrap.min.js"></script>
+<script src="assets/js/slick/slick.min.js"></script>
+<script src="assets/js/main.js"></script>
+
+<script>
+    $('.first-slide-carousel').slick({
+        dots: false,
+        infinite: true,
+        arrows: false,
+        speed: 500,
+        fade: true,
+        autoplay: true,
+        cssEase: 'linear'
+    });
+</script>
+</body>
+</html>

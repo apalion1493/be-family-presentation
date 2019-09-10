@@ -1,0 +1,27 @@
+.header {
+  padding-top: 25px;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+
+  &__wd {
+    background: url("../img/logo-main-wd.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 184px;
+    height: 49px;
+    display: block;
+    margin-right: 44px;
+  }
+
+  &__bf {
+    background: url("../img/page-header__be-Family.svg") no-repeat center;
+    background-size: 100% auto;
+    width: 142px;
+    height: 40px;
+    display: block;
+    position: relative;
+    top: 2px;
+  }
+}

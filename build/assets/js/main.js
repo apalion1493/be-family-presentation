@@ -1,0 +1,1 @@
+jQuery(document).ready(function(){jQuery(".menu-burger").click(function(){jQuery(this).toggleClass("active")})});

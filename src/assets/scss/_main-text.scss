@@ -1,0 +1,28 @@
+.main-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-text__title-first {
+  font-weight: bold;
+  font-size: 2em;
+  line-height: 37px;
+  color: #F11F60;
+  margin-top: 175px;
+}
+
+.main-text__title-second {
+  font-weight: bold;
+  font-size: 4.3em;
+  line-height: 84px;
+  color: #000000;
+  margin-top: 37px;
+}
+
+.main-text__title-desc {
+  font-weight: bold;
+  font-size: 1.125em;
+  line-height: 21px;
+  color: #000000;
+  margin-top: 37px;
+}
