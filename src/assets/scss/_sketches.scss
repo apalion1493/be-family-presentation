@@ -1,0 +1,23 @@
+.sketches {
+  background: rgba(255, 214, 175, 0.18);
+  padding-top: 48px;
+  padding-bottom: 55px;
+  overflow: hidden;
+}
+
+.sketches-item {
+  width: 49%;
+  margin-bottom: 30px;
+}
+
+.sketches__title {
+  line-height: 49px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 767.98px) {
+  .sketches-item {
+    width: 100%;
+  }
+}

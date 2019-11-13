@@ -1,0 +1,153 @@
+.tabs-approach {
+  background: rgba(255, 214, 175, 0.18);
+  padding-top: 65px;
+  padding-bottom: 65px;
+  overflow: hidden;
+
+  .nav-pills .nav-link {
+    p {
+      display: none;
+      font-size: 24px;
+      line-height: 34px;
+      color: #777777;
+      margin-bottom: 0;
+    }
+  }
+
+
+  .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.03);
+    border-radius: 10px;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    padding-left: 35px;
+    padding-right: 38px;
+    padding-bottom: 40px;
+
+    p {
+      display: block;
+    }
+
+    .tabs-approach-container__title {
+      font-size: 36px;
+      line-height: 42px;
+      color: #555555;
+      margin-left: 0;
+    }
+
+    .tabs-approach-container__number {
+      font-size: 125px;
+      line-height: 146px;
+      color: #F2205F;
+      bottom: -17px;
+    }
+  }
+}
+
+.tabs-approach__content {
+  margin-top: 60px;
+}
+
+.tabs-approach__human {
+  background-size: 100% auto;
+  width: 360px;
+  height: 360px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+.tabs-approach__table {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+
+  td {
+    line-height: 50px;
+    &:nth-child(1) {
+      padding-right: 40px;
+      padding-left: 8px;
+    }
+
+    &:nth-child(2) {
+      padding-right: 33px;
+    }
+
+    &:nth-child(3) {
+      color: #777777;
+      padding-right: 27px;
+    }
+  }
+
+  tr {
+    border-bottom: 1px solid #E8E8E8;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+}
+
+.tabs-approach__table-colorRed {
+  color: #F2205F;
+}
+
+.tabs-approach__table-fz48 {
+  font-size: 48px;
+}
+
+.tabs-approach__table-fz32 {
+  font-size: 32px;
+}
+
+.tabs-approach__table-fz24 {
+  font-size: 24px;
+}
+
+.tabs-approach__table-fz16 {
+  font-size: 16px;
+}
+
+.tabs-approach__table-fz14  {
+  font-size: 14px;
+}
+
+.tabs-approach-container {
+  max-width: 600px;
+}
+
+.tabs-approach-container__title {
+  display: flex;
+  align-items: flex-end;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #777777;
+  margin-left: 23px;
+}
+
+.tabs-approach-container__number {
+  font-weight: 900;
+  font-size: 75px;
+  line-height: 88px;
+  text-transform: uppercase;
+  color: #E1C9D0;
+  position: relative;
+  bottom: -10px;
+  margin-right: 15px;
+}
+
+.tabs-approach__title {
+  line-height: 42px;
+  text-align: center;
+  color: #555555;
+  font-weight: bold;
+}
+
+
+#target1 {
+  height: 754px;
+}

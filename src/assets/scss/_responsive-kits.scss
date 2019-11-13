@@ -1,0 +1,89 @@
+.responsive-kits {
+  background: rgba(255, 214, 175, 0.18);
+  padding-top: 112px;
+  padding-bottom: 130px;
+  position: relative;
+}
+
+.responsive-kits__list {
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-top: 35px;
+}
+
+.responsive-kits__item {
+  display: flex;
+  align-items: flex-start;
+  list-style-type: none;
+  margin-bottom: 35px;
+
+  p {
+    margin-bottom: 0;
+    font-size: 1em;
+    line-height: 19px;
+    color: #777777;
+    max-width: 492px;
+  }
+}
+
+.responsive-kits__text {
+  display: block;
+  margin-bottom: 43px;
+  max-width: 493px;
+
+  p {
+    font-size: 1em;
+    line-height: 19px;
+    color: #777777;
+    margin-bottom: 0;
+  }
+}
+
+.responsive-kits__title {
+  margin-bottom: 33px;
+}
+
+.responsive-kits__bg {
+  position: absolute;
+  display: block;
+}
+
+.responsive-kits__bg1 {
+  background: url("../img/responsive-kits__bg1.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 812px;
+  height: 889px;
+  left: -290px;
+  top: 100px;
+}
+
+.responsive-kits__bg2 {
+  background: url("../img/responsive-kits__bg2.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 337px;
+  height: 727px;
+  right: 0;
+  top: -100px;
+}
+
+.responsive-kits__h4 {
+  font-weight: bold;
+}
+
+@media (max-width: 991.98px) {
+  .responsive-kits__svg-animate svg {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .responsive-kits {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .responsive-kits__bg1 {
+    display: none;
+  }
+}

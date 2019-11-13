@@ -5,7 +5,7 @@ html, body {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 1200px;
+    max-width: 1254px;
   }
 }
 
@@ -15,5 +15,61 @@ html, body {
 
   * {
     outline: none;
+  }
+}
+
+h4, .h4 {
+  font-size: 1.75em;
+}
+
+
+h2, .h2 {
+  font-size: 2.625em;
+}
+
+h3, .h3 {
+  font-size: 2.25em;
+}
+
+
+.list-style-icon {
+  background: #F21665;
+  border: 7px solid #FFE68C;
+  border-radius: 50%;
+  min-width: 31px;
+  height: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 0.75em;
+  line-height: 14px;
+  color: #FFFFFF;
+  margin-right: 18px;
+  position: relative;
+  top: -5px;
+}
+
+.h2-title {
+  line-height: 49px;
+  color: #000000;
+  font-weight: bold;
+}
+
+@media (max-width: 767.98px) {
+  html, body {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  h2.h2 {
+    font-size: 2em;
+    line-height: 29px;
+  }
+
+  h3.h3 {
+    font-size: 1.8em;
+    line-height: 26px;
   }
 }
