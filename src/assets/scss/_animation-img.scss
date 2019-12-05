@@ -6,7 +6,11 @@
   position: absolute;
   top: 202px;
   left: 162px;
-  cursor: pointer;
+  cursor: grab;
+
+  &:active {
+    cursor: grabbing;
+  }
 }
 
 .duck {
