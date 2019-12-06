@@ -1,0 +1,182 @@
+#other-jobs {
+  background: #ffffff;
+  color: #555555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 70px;
+  padding-bottom: 74px;
+}
+
+.fp-viewing-url-other-jobs #header .stooller-logo {
+  color: #fff;
+}
+
+.fp-viewing-url-other-jobs #header .navbar-brand>img {
+  filter: brightness(500%);
+}
+
+.other-jobs__row {
+  width: 100%;
+}
+
+.other-jobs__row .col-6 {
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.other-jobs__container-img {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  display: flex;
+}
+
+.other-jobs__container-vput-img {
+  background-image: linear-gradient(215deg, #56eaf4, #38adf0);
+  align-items: center;
+  justify-content: center;
+}
+
+.other-jobs__container-vput-img img {
+  position: relative;
+  top: 75px;
+}
+
+.other-jobs__container-stooler-img {
+  background-image: linear-gradient(206deg, #a8ee54, #51ffc7);
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+.other-jobs__container-stooler-img img {
+  position: relative;
+  top: 5px;
+  padding-top: 100px;
+}
+
+.other-jobs__container-ansy-img {
+  background-image: linear-gradient(217deg, #b5275a, #7c3773);
+}
+
+.other-jobs__container-text {
+  margin-top: 11px;
+}
+
+.other-jobs__container-text span {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.other-jobs__container-text p {
+  color: #777777;
+  font-size: 15px;
+  line-height: 24px;
+  max-width: 530px;
+}
+
+#other-jobs .row {
+  margin-left: -6px;
+  margin-right: -6px;
+}
+
+.other-jobs__container-stooler-img img {
+  transition: 0.3s;
+}
+
+.other-jobs__container-stooler-img img:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.other-jobs__container-ansy-img {
+  position: relative;
+}
+
+.other-jobs__container-ansy-img img {
+  position: absolute;
+  left: -35px;
+  bottom: -100px;
+}
+
+.other-jobs__padding {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+@media (max-width: 1199.98px) {
+  .other-jobs__padding {
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .other-jobs__container-img {
+    height: 300px;
+  }
+
+  .other-jobs__container-vput-img img {
+    max-width: 200%;
+  }
+
+  .other-jobs__container-stooler-img img {
+    max-width: 150%;
+  }
+
+  .other-jobs__container-ansy-img img {
+    max-width: 70%;
+    bottom: -30px;
+    margin: auto;
+    left: 0;
+    right: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .other-jobs__container-ansy-img img {
+    position: relative;
+    max-width: 90%;
+    bottom: 0;
+  }
+
+  #other-jobs {
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .other-jobs__container-stooler-img img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .other-jobs__container-ansy-img img {
+    max-width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .other-jobs__container-vput-img img {
+    max-width: 270%;
+  }
+}
+
+.other-jobs__title {
+  font-size: 42px;
+  color: #555;
+  margin-bottom: 53px;
+}
+
+.btn.other-jobs__btn {
+  background: #178EC1;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-transform: uppercase;
+}

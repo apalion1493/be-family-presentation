@@ -975,7 +975,6 @@
             </div>
         </div>
     </section>
-
     <section class="section technologies">
         <div class="container">
             <h2 class="h2 h2-title text-center adaptability__title">иСПОЛЬЗУЕМЫЕ ТЕхНОЛОГИИ</h2>
@@ -983,7 +982,7 @@
                 <div class="col-6">
                     <div>
                         <div class="technologies-container">
-                            <img id="bootstrap-item" class="active" src="assets/img/bootstrap-item.svg" alt="">
+                            <img id="bootstrap-item" class="" src="assets/img/bootstrap-item.svg" alt="">
                             <img id="sass-item" class="" src="assets/img/sass-item.svg" alt="">
                             <img id="html-item" class="" src="assets/img/html-item.svg" alt="">
                             <img id="css-item" class="" src="assets/img/css-item.svg" alt="">
@@ -993,20 +992,53 @@
                 </div>
                 <div class="col-6">
                     <div class="row">
-                        <div class="col-12">
+                        <div class="col-12 technologies__container">
+                            <div class="technologies-description show">
+                                <span class="technologies-description__title">Frontend</span>
+                                <p class="technologies-description__text">Мы использовали современные технологии для быстрой и качественно
+                                    разработки</p>
+                            </div>
                             <div class="tab-content" id="v-pills-tabContent1">
-                                <div class="tab-pane fade show active" id="v-pills-home1" role="tabpanel" aria-labelledby="v-pills-home-tab1">
-                                    <span>Bootstrap</span>
-                                    <p>Cамой популярной в мире front-end библиотекой компонентов интерфейса.</p>
+                                <div class="tab-pane fade" id="v-pills-home1" role="tabpanel" aria-labelledby="v-pills-home-tab1">
+                                    <div class="technologies-block">
+                                        <span class="technologies-block__title">Bootstrap</span>
+                                        <i class="technologies-block__close"></i>
+                                        <p class="technologies-block__text">Самой популярной в мире front-end библиотекой компонентов интерфейса.</p>
+                                    </div>
                                 </div>
-                                <div class="tab-pane fade" id="v-pills-profile1" role="tabpanel" aria-labelledby="v-pills-profile-tab1">2</div>
-                                <div class="tab-pane fade" id="v-pills-messages1" role="tabpanel" aria-labelledby="v-pills-messages-tab1">3</div>
-                                <div class="tab-pane fade" id="v-pills-settings1" role="tabpanel" aria-labelledby="v-pills-settings-tab1">4</div>
+                                <div class="tab-pane fade" id="v-pills-profile1" role="tabpanel" aria-labelledby="v-pills-profile-tab1">
+                                    <div class="technologies-block">
+                                        <span class="technologies-block__title">SASS</span>
+                                        <i class="technologies-block__close"></i>
+                                        <p class="technologies-block__text">Самой популярной в мире front-end библиотекой компонентов интерфейса.</p>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-messages1" role="tabpanel" aria-labelledby="v-pills-messages-tab1">
+                                    <div class="technologies-block">
+                                        <span class="technologies-block__title">HTML5</span>
+                                        <i class="technologies-block__close"></i>
+                                        <p class="technologies-block__text">Самой популярной в мире front-end библиотекой компонентов интерфейса.</p>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-settings1" role="tabpanel" aria-labelledby="v-pills-settings-tab1">
+                                    <div class="technologies-block">
+                                        <span class="technologies-block__title">CSS3</span>
+                                        <i class="technologies-block__close"></i>
+                                        <p class="technologies-block__text">Самой популярной в мире front-end библиотекой компонентов интерфейса.</p>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-settings2" role="tabpanel" aria-labelledby="v-pills-settings-tab2">
+                                    <div class="technologies-block">
+                                        <span class="technologies-block__title">Vue.js</span>
+                                        <i class="technologies-block__close"></i>
+                                        <p class="technologies-block__text">Самой популярной в мире front-end библиотекой компонентов интерфейса.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="col-12">
-                            <div class="nav flex-column nav-pills" id="v-pills-tab1" role="tablist" aria-orientation="vertical">
-                                <a class="nav-link active" id="v-pills-home-tab1" data-toggle="pill" href="#v-pills-home1" role="tab"
+                            <div class="nav nav-pills" id="v-pills-tab1" role="tablist" aria-orientation="vertical">
+                                <a class="nav-link" id="v-pills-home-tab1" data-toggle="pill" href="#v-pills-home1" role="tab"
                                    aria-controls="v-pills-home" aria-selected="true">Bootstrap</a>
                                 <a class="nav-link" id="v-pills-profile-tab1" data-toggle="pill" href="#v-pills-profile1" role="tab"
                                    aria-controls="v-pills-profile" aria-selected="false">Sass</a>
@@ -1014,9 +1046,10 @@
                                    aria-controls="v-pills-messages" aria-selected="false">html5</a>
                                 <a class="nav-link" id="v-pills-settings-tab1" data-toggle="pill" href="#v-pills-settings1" role="tab"
                                    aria-controls="v-pills-settings" aria-selected="false">css3</a>
+                                <a class="nav-link" id="v-pills-settings-tab2" data-toggle="pill" href="#v-pills-settings2" role="tab"
+                                   aria-controls="v-pills-settings" aria-selected="false">vue.js</a>
                             </div>
                         </div>
-
                     </div>
                 </div>
                 <div class="col-6">
@@ -1025,7 +1058,105 @@
             </div>
         </div>
     </section>
-    
+
+    <section id="other-jobs" class="section fp-section active fp-completely">
+        <div class="container d-flex flex-column align-items-center">
+            <h2 class="text-center other-jobs__title">Наши другие работы</h2>
+            <div class="row other-jobs__row">
+                <div class="col-sm-12 col-lg-6 other-jobs__padding">
+                    <div class="other-jobs__container other-jobs__container-vput">
+                        <div class="other-jobs__container-img other-jobs__container-vput-img">
+                            <a class="d-flex justify-content-center" data-tilt="" href="#" style="will-change: transform; transform: perspective(300px) rotateX(0deg) rotateY(0deg);">
+                                <img src="assets/img/vput-main-img.png" alt="">
+                            </a>
+                        </div>
+                        <div class="other-jobs__container-text">
+                            <span>V.P.U.T.</span>
+                            <p>While you progress through the questions on our personalised price calculator, we keep updating the price for your booking. At the end of the process we give you a fixed price for your relocation. While you progress through the questions on our personalised price calculator, we keep updating the price.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-lg-6 other-jobs__padding">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 other-jobs__padding">
+                            <div class="other-jobs__container other-jobs__container-stooler">
+                                <div class="other-jobs__container-img other-jobs__container-stooler-img">
+                                    <a class="w-100" href="#">
+                                        <img src="assets/img/stooler-main-img.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="other-jobs__container-text">
+                                    <span>Stooller</span>
+                                    <p>While you progress through the questions on our personalised price calculator, we keep updating the price for your booking. At the end of the process we give you a fixed price for your relocation.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 other-jobs__padding">
+                            <div class="other-jobs__container other-jobs__container-ansy">
+                                <div class="other-jobs__container-img other-jobs__container-ansy-img">
+                                    <a class="w-100 d-flex justify-content-center" data-tilt="" href="#" style="will-change: transform; transform: perspective(300px) rotateX(0deg) rotateY(0deg);">
+                                        <img src="assets/img/ansy-main-img.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="other-jobs__container-text">
+                                    <span>Ansy Gallery</span>
+                                    <p>Ansy Carpet Company – крупнейший магазин элитных ковров в Москве, созданный в 1992 году искусствоведами антикварного бутика и декораторами столичной дизайн-студии.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn other-jobs__btn mt-3">Все портфолио</button>
+        </div>
+    </section>
+    <section id="write-ToUs" class="section flex-column align-items-center">
+        <div class="container d-flex flex-column align-items-center">
+            <h2 class="text-center ">Хотите подобный проект?</h2>
+            <div class="row write-ToUs__row">
+                <div class="col-sm-12 mb-5 mb-md-0 col-md-6">
+                    <div class="write-ToUs__block-contact">
+                        <span class="write-ToUs__title">Контакты для связи</span>
+                        <ul class="write-ToUs__list">
+                            <li>
+                                <span>Phone:</span> <p class="write-ToUs__list-text">+373 (69) 377 248 &emsp;Moldova</p>
+                            </li>
+                            <li>
+                                <span>Email:</span> <p class="write-ToUs__list-text">a.popov@webdelo.org</p>
+                            </li>
+                            <li>
+                                <span>Skype:</span> <p class="write-ToUs__list-text">webdelo.org</p>
+                            </li>
+                            <li>
+                                <span>Address:</span> <p class="write-ToUs__list-text">Moldova, Bender, 28 Suvorov st. Business Center "Sheriff", office 38</p>
+                            </li>
+                        </ul>
+                        <span class="write-ToUs__title justify-content-start">Следите за нами</span>
+                        <div class="write-ToUs__block-social">
+                            <a href="#" class="write-ToUs__block-social-icon write-ToUs__block-social-linkedin"></a>
+                            <a href="#" class="write-ToUs__block-social-icon write-ToUs__block-social-github"></a>
+                            <a href="#" class="write-ToUs__block-social-icon write-ToUs__block-social-facebook"></a>
+                            <a href="#" class="write-ToUs__block-social-icon write-ToUs__block-social-instagram"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 mb-5 mb-md-0 col-md-6">
+                    <div class="write-ToUs__block-form">
+                        <span class="write-ToUs__title">Напишите прямо сейчас</span>
+                        <p class="d-flex justify-content-center justify-content-md-start">И мы найдем для вас лучшее решение</p>
+                        <form class="write-ToUs__form" action="">
+                            <input class="write-ToUs__form-control write-ToUs__form-control-name" type="text" placeholder="Ваше имя">
+                            <input class="write-ToUs__form-control write-ToUs__form-control-phone" type="text" placeholder="Ваш телефон">
+                            <textarea class="write-ToUs__form-control write-ToUs__form-control-comment" rows="1" placeholder="Текст сообщения"></textarea>
+                            <button type="submit" class="btn yellow-btn-form write-ToUs__block-form-btn">ОТПРАВИТЬ</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="btn blue-btn-form ">ЗАПОЛНИТЬ БРИФ</button>
+    </section>
 </main>
 
 <script src="assets/js/jquery/jquery.min.js"></script>
@@ -1046,21 +1177,34 @@
 
         new WOW().init();
 
-        let tabId = ['#v-pills-home-tab1', '#v-pills-profile-tab1', '#v-pills-messages-tab1', '#v-pills-settings-tab1'];
-        let imgId = ['#bootstrap-item', '#sass-item', '#html-item', '#css-item'];
+        let tabId = ['#v-pills-home-tab1', '#v-pills-profile-tab1', '#v-pills-messages-tab1', '#v-pills-settings-tab1', '#v-pills-settings-tab2'];
+        let imgId = ['#bootstrap-item', '#sass-item', '#html-item', '#css-item', '#vue-item'];
 
         for(let i = 0; i <= tabId.length; i++) {
             $(tabId[i]).click(function () {
                 $('.technologies-container img').removeClass('active');
-                $(imgId[i]).toggleClass('active')
+                $(imgId[i]).toggleClass('active');
+                $('.technologies-description').removeClass('show');
             })
         }
 
         for(let i = 0; i <= imgId.length; i++) {
             $(imgId[i]).click(function () {
-                $(tabId[i]).click()
+                $(tabId[i]).click();
+                $('.technologies-description').removeClass('show');
             });
         }
+
+        $('.technologies-block__close').click(function () {
+            $('.tab-pane').removeClass('show').removeClass('active');
+            $('.nav-link').removeClass('active');
+            $('.technologies-container img').removeClass('active');
+            $('.technologies-description').addClass('show');
+        });
+
+        // $('.nav-link').click(function () {
+        //     $('.technologies-description').removeClass('show');
+        // })
 
 </script>
 </body>
