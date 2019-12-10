@@ -80,3 +80,21 @@ h3, .h3 {
   width: 187px;
   height: 195px;
 }
+
+#circle2 {
+  position: relative;
+  width: 187px;
+  height: 195px;
+
+  span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    font-weight: 900;
+    font-size: 58px;
+    line-height: 68px;
+    color: #F2205F
+  }
+}

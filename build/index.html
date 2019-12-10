@@ -861,14 +861,17 @@
                             <!--<div class="diagram-group__block-img">-->
                                 <!--<img src="assets/img/yellow-circle.svg" alt="">-->
                             <!--</div>-->
-                            <div id="circle"></div>
+                            <div id="circle" class="wow bounceIn"></div>
                             <p class="diagram-group__name">Классический</p>
                             <span class="diagram-group__time">03:77</span>
                         </div>
 
                         <div class="diagram-group__container">
-                            <div class="diagram-group__block-img">
-                                <img src="assets/img/red-circle.svg" alt="">
+                            <!--<div class="diagram-group__block-img">-->
+                                <!--<img src="assets/img/red-circle.svg" alt="">-->
+                            <!--</div>-->
+                            <div id="circle2" class="wow bounceIn">
+                                <span>2X</span>
                             </div>
                             <p class="diagram-group__name">С дизайн системой</p>
                             <span class="diagram-group__time">01:30</span>
@@ -1243,10 +1246,13 @@
 
 
 
-        var el = $('#circle'),
-            inited = false;
+        var el  = $('#circle'),
+            el2 = $('#circle2'),
+            inited = false,
+            inited2 = false;
 
         el.appear({ force_process: true });
+        el2.appear({ force_process: true });
 
         el.on('appear', function() {
             if (!inited) {
@@ -1263,6 +1269,35 @@
                 inited = true;
             }
         });
+
+        el2.on('appear', function() {
+            if (!inited2) {
+                el2.circleProgress({
+                    value: 1,
+                    size: 187,
+                    thickness: 30,
+                    startAngle: 0,
+                    lineCap: 'round',
+                    fill: {
+                        color: '#F2205F'
+                    }
+                });
+                inited2 = true;
+            }
+        });
+
+
+        // $('#circle2').circleProgress({
+        //     value: 0.75,
+        //     size: 187,
+        //     thickness: 30,
+        //     startAngle: 0,
+        //     lineCap: 'round',
+        //     fill: {
+        //         color: '#F2205F'
+        //     }
+        // });
+
 
 </script>
 </body>
