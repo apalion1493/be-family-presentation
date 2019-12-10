@@ -2,6 +2,33 @@
 // = bootstrap/bootstrap.min.js
 // = wow/wow.min.js
 
+$(function() {
+    //  changes mouse cursor when highlighting loawer right of box
+    $(".write-ToUs__form-control-comment").mousemove(function(e) {
+        var myPos = $(this).offset();
+        myPos.bottom = $(this).offset().top + $(this).outerHeight();
+        myPos.right = $(this).offset().left + $(this).outerWidth();
+
+        if (myPos.bottom > e.pageY && e.pageY > myPos.bottom - 16 && myPos.right > e.pageX && e.pageX > myPos.right - 16) {
+            $(this).css({ cursor: "nw-resize" });
+        }
+        else {
+            $(this).css({ cursor: "" });
+        }
+    })
+    //  the following simple make the textbox "Auto-Expand" as it is typed in
+        .keyup(function(e) {
+            //  this if statement checks to see if backspace or delete was pressed, if so, it resets the height of the box so it can be resized properly
+            if (e.which === 8 || e.which === 46) {
+                $(this).height(parseFloat($(this).css("min-height")) !== 0 ? parseFloat($(this).css("min-height")) : parseFloat($(this).css("font-size")));
+            }
+            //  the following will help the text expand as typing takes place
+            while($(this).outerHeight() < this.scrollHeight + parseFloat($(this).css("borderTopWidth")) + parseFloat($(this).css("borderBottomWidth"))) {
+                $(this).height($(this).height()+1);
+            }
+        });
+});
+
 
 jQuery(document).ready(function(){
     jQuery('.menu-burger').click(function () {
@@ -180,3 +207,89 @@ DragManager.onDragEnd = function(dragObject, dropElem) {
         dropElem.classList.remove('computer-smile');
     }, 200);
 };
+
+
+let tabId1 = ['#v-pills-home-tab1', '#v-pills-profile-tab1', '#v-pills-messages-tab1', '#v-pills-settings-tab1', '#v-pills-settings-tab2'];
+let imgId1 = ['#bootstrap-item', '#sass-item', '#html-item', '#css-item', '#vue-item'];
+
+let tabId2 = ['#v-pills-home-tab2', '#v-pills-profile-tab2', '#v-pills-messages-tab2'];
+let imgId2 = ['#laravel-item', '#php-item', '#mySQL-item'];
+
+for(let i = 0; i <= tabId1.length; i++) {
+    $(tabId1[i]).click(function () {
+        $('.technologies-container__front img').removeClass('active');
+        $(imgId1[i]).toggleClass('active');
+        $('.technologies-description_front').removeClass('show');
+    });
+}
+
+for(let i = 0; i <= tabId2.length; i++) {
+    $(tabId2[i]).click(function () {
+        $('.technologies-container__back img').removeClass('active');
+        $(imgId2[i]).toggleClass('active');
+        $('.technologies-description_back').removeClass('show');
+    })
+}
+
+for(let i = 0; i <= imgId1.length; i++) {
+    $(imgId1[i]).click(function () {
+        $(tabId1[i]).click();
+        $('.technologies-description_front').removeClass('show');
+    });
+}
+
+for(let i = 0; i <= imgId2.length; i++) {
+    $(imgId2[i]).click(function () {
+        $(tabId2[i]).click();
+        $('.technologies-description_back').removeClass('show');
+    });
+}
+
+$('.technologies-block__close-front').click(function () {
+    $('.tab-pane_front').removeClass('show').removeClass('active');
+    $('.nav_front .nav-link').removeClass('active');
+    $('.technologies-container__front img').removeClass('active');
+    $('.technologies-description_front').addClass('show');
+});
+
+$('.technologies-block__close-back').click(function () {
+    $('.tab-pane_back').removeClass('show').removeClass('active');
+    $('.nav_back .nav-link').removeClass('active');
+    $('.technologies-container__back img').removeClass('active');
+    $('.technologies-description_back').addClass('show');
+});
+
+
+
+
+// var controller = new ScrollMagic.Controller();
+// var scene = new ScrollMagic.Scene({
+//     triggerElement: "#trigger"
+// })
+//     .setTween("#animate1", 0.5, {scale: 2.5}) // trigger a TweenMax.to tween
+//     .addIndicators() // add indicators (requires plugin)
+//     .addTo(controller);
+
+
+var controller = new ScrollMagic.Controller();
+
+var tween1;
+tween1 = TweenMax.to("#animate1", 0.5, {top: '70px'});
+var scene1 = new ScrollMagic.Scene({triggerElement: "#trigger", duration: "50%", offset: -20})
+    .setTween(tween1)
+    .addIndicators()
+    .addTo(controller);
+
+var tween2;
+tween2 = TweenMax.to("#animate2", 0.5, {top: '50px'});
+var scene2 = new ScrollMagic.Scene({triggerElement: "#trigger", duration: "50%", offset: -20})
+    .setTween(tween2)
+    .addIndicators()
+    .addTo(controller);
+
+var tween3;
+tween3 = TweenMax.to("#animate3", 0.5, {top: '29px'});
+var scene3 = new ScrollMagic.Scene({triggerElement: "#trigger", duration: "50%", offset: -20})
+    .setTween(tween3)
+    .addIndicators()
+    .addTo(controller);

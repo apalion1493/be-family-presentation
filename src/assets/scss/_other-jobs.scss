@@ -64,7 +64,7 @@
 }
 
 .other-jobs__container-text span {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: bold;
   margin-bottom: 10px;
   display: block;
@@ -72,9 +72,8 @@
 
 .other-jobs__container-text p {
   color: #777777;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 24px;
-  max-width: 530px;
 }
 
 #other-jobs .row {
@@ -179,4 +178,5 @@
   padding-left: 30px;
   padding-right: 30px;
   text-transform: uppercase;
+  border-radius: 20px;
 }

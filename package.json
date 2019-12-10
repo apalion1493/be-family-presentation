@@ -4,7 +4,10 @@
   "description": "Assembly for projects whis SASS. Start in project's folder 1. npm -i gulp, 2.npm init -y",
   "main": "index.js",
   "dependencies": {
-    "del": "^3.0.0"
+    "del": "^3.0.0",
+    "jquery-appear-original": "^0.6.2",
+    "jquery-circle-progress": "^1.2.2",
+    "scrollmagic": "^2.0.7"
   },
   "devDependencies": {
     "bootstrap": "^4.3.1",

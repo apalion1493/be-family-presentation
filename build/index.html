@@ -762,12 +762,14 @@
                 </div>
 
                 <div class="col-5">
+                    <div id="trigger"></div>
                     <div class="design-system__blockImage design-system__blockImage-second">
-                        <img class="cadr-img-1" src="assets/img/cadr-img-1.png" alt="">
-                        <img class="cadr-img-2" src="assets/img/cadr-img-2.png" alt="">
-                        <img class="cadr-img-3" src="assets/img/cadr-img-3.png" alt="">
+                        <img id="animate1" class="cadr-img-1" src="assets/img/cadr-img-1.png" alt="">
+                        <img id="animate2" class="cadr-img-2" src="assets/img/cadr-img-2.png" alt="">
+                        <img id="animate3" class="cadr-img-3" src="assets/img/cadr-img-3.png" alt="">
                         <img class="cadr-img-4" src="assets/img/cadr-img-4.png" alt="">
                     </div>
+
                 </div>
                 <div class="col-7">
                     <div class="design-system__blockText design-system__blockText-second">
@@ -856,12 +858,14 @@
                 <div class="col-5">
                     <div class="diagram-group">
                         <div class="diagram-group__container">
-                            <div class="diagram-group__block-img">
-                                <img src="assets/img/yellow-circle.svg" alt="">
-                            </div>
+                            <!--<div class="diagram-group__block-img">-->
+                                <!--<img src="assets/img/yellow-circle.svg" alt="">-->
+                            <!--</div>-->
+                            <div id="circle"></div>
                             <p class="diagram-group__name">Классический</p>
                             <span class="diagram-group__time">03:77</span>
                         </div>
+
                         <div class="diagram-group__container">
                             <div class="diagram-group__block-img">
                                 <img src="assets/img/red-circle.svg" alt="">
@@ -981,7 +985,7 @@
             <div class="row">
                 <div class="col-6">
                     <div>
-                        <div class="technologies-container">
+                        <div class="technologies-container technologies-container__front">
                             <img id="bootstrap-item" class="" src="assets/img/bootstrap-item.svg" alt="">
                             <img id="sass-item" class="" src="assets/img/sass-item.svg" alt="">
                             <img id="html-item" class="" src="assets/img/html-item.svg" alt="">
@@ -993,51 +997,51 @@
                 <div class="col-6">
                     <div class="row">
                         <div class="col-12 technologies__container">
-                            <div class="technologies-description show">
+                            <div class="technologies-description technologies-description_front show">
                                 <span class="technologies-description__title">Frontend</span>
                                 <p class="technologies-description__text">Мы использовали современные технологии для быстрой и качественно
                                     разработки</p>
                             </div>
                             <div class="tab-content" id="v-pills-tabContent1">
-                                <div class="tab-pane fade" id="v-pills-home1" role="tabpanel" aria-labelledby="v-pills-home-tab1">
+                                <div class="tab-pane tab-pane_front fade" id="v-pills-home1" role="tabpanel" aria-labelledby="v-pills-home-tab1">
                                     <div class="technologies-block">
                                         <span class="technologies-block__title">Bootstrap</span>
-                                        <i class="technologies-block__close"></i>
+                                        <i class="technologies-block__close technologies-block__close-front"></i>
                                         <p class="technologies-block__text">Самой популярной в мире front-end библиотекой компонентов интерфейса.</p>
                                     </div>
                                 </div>
-                                <div class="tab-pane fade" id="v-pills-profile1" role="tabpanel" aria-labelledby="v-pills-profile-tab1">
+                                <div class="tab-pane tab-pane_front fade" id="v-pills-profile1" role="tabpanel" aria-labelledby="v-pills-profile-tab1">
                                     <div class="technologies-block">
                                         <span class="technologies-block__title">SASS</span>
-                                        <i class="technologies-block__close"></i>
+                                        <i class="technologies-block__close technologies-block__close-front"></i>
                                         <p class="technologies-block__text">Самой популярной в мире front-end библиотекой компонентов интерфейса.</p>
                                     </div>
                                 </div>
-                                <div class="tab-pane fade" id="v-pills-messages1" role="tabpanel" aria-labelledby="v-pills-messages-tab1">
+                                <div class="tab-pane tab-pane_front fade" id="v-pills-messages1" role="tabpanel" aria-labelledby="v-pills-messages-tab1">
                                     <div class="technologies-block">
                                         <span class="technologies-block__title">HTML5</span>
-                                        <i class="technologies-block__close"></i>
+                                        <i class="technologies-block__close technologies-block__close-front"></i>
                                         <p class="technologies-block__text">Самой популярной в мире front-end библиотекой компонентов интерфейса.</p>
                                     </div>
                                 </div>
-                                <div class="tab-pane fade" id="v-pills-settings1" role="tabpanel" aria-labelledby="v-pills-settings-tab1">
+                                <div class="tab-pane tab-pane_front fade" id="v-pills-settings1" role="tabpanel" aria-labelledby="v-pills-settings-tab1">
                                     <div class="technologies-block">
                                         <span class="technologies-block__title">CSS3</span>
-                                        <i class="technologies-block__close"></i>
+                                        <i class="technologies-block__close technologies-block__close-front"></i>
                                         <p class="technologies-block__text">Самой популярной в мире front-end библиотекой компонентов интерфейса.</p>
                                     </div>
                                 </div>
-                                <div class="tab-pane fade" id="v-pills-settings2" role="tabpanel" aria-labelledby="v-pills-settings-tab2">
+                                <div class="tab-pane tab-pane_front fade" id="v-pills-settings2" role="tabpanel" aria-labelledby="v-pills-settings-tab2">
                                     <div class="technologies-block">
                                         <span class="technologies-block__title">Vue.js</span>
-                                        <i class="technologies-block__close"></i>
+                                        <i class="technologies-block__close technologies-block__close-front"></i>
                                         <p class="technologies-block__text">Самой популярной в мире front-end библиотекой компонентов интерфейса.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-12">
-                            <div class="nav nav-pills" id="v-pills-tab1" role="tablist" aria-orientation="vertical">
+                            <div class="nav nav_front nav-pills" id="v-pills-tab1" role="tablist" aria-orientation="vertical">
                                 <a class="nav-link" id="v-pills-home-tab1" data-toggle="pill" href="#v-pills-home1" role="tab"
                                    aria-controls="v-pills-home" aria-selected="true">Bootstrap</a>
                                 <a class="nav-link" id="v-pills-profile-tab1" data-toggle="pill" href="#v-pills-profile1" role="tab"
@@ -1052,8 +1056,56 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
 
+                <div class="col-6">
+                    <div class="col-12 technologies__container">
+                        <div class="technologies-description technologies-description_back show">
+                            <span class="technologies-description__title">Backend</span>
+                            <p class="technologies-description__text">Для серверной части использовали самые современые инструменты. Это дает защищеность и скорость приложению.</p>
+                        </div>
+                        <div class="tab-content" id="v-pills-tabContent2">
+                            <div class="tab-pane tab-pane_back fade" id="v-pills-home2" role="tabpanel" aria-labelledby="v-pills-home-tab2">
+                                <div class="technologies-block">
+                                    <span class="technologies-block__title">Laravel</span>
+                                    <i class="technologies-block__close technologies-block__close-back"></i>
+                                    <p class="technologies-block__text">Самой популярной в мире front-end библиотекой компонентов интерфейса.</p>
+                                </div>
+                            </div>
+                            <div class="tab-pane tab-pane_back fade" id="v-pills-profile2" role="tabpanel" aria-labelledby="v-pills-profile-tab2">
+                                <div class="technologies-block">
+                                    <span class="technologies-block__title">php7</span>
+                                    <i class="technologies-block__close technologies-block__close-back"></i>
+                                    <p class="technologies-block__text">Самой популярной в мире front-end библиотекой компонентов интерфейса.</p>
+                                </div>
+                            </div>
+                            <div class="tab-pane tab-pane_back fade" id="v-pills-messages2" role="tabpanel" aria-labelledby="v-pills-messages-tab2">
+                                <div class="technologies-block">
+                                    <span class="technologies-block__title">mySQL</span>
+                                    <i class="technologies-block__close technologies-block__close-back"></i>
+                                    <p class="technologies-block__text">Самой популярной в мире front-end библиотекой компонентов интерфейса.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="nav nav_back nav-pills" id="v-pills-tab2" role="tablist" aria-orientation="vertical">
+                            <a class="nav-link" id="v-pills-home-tab2" data-toggle="pill" href="#v-pills-home2" role="tab"
+                               aria-controls="v-pills-home" aria-selected="true">Laravel</a>
+                            <a class="nav-link" id="v-pills-profile-tab2" data-toggle="pill" href="#v-pills-profile2" role="tab"
+                               aria-controls="v-pills-profile" aria-selected="false">php7</a>
+                            <a class="nav-link" id="v-pills-messages-tab2" data-toggle="pill" href="#v-pills-messages2" role="tab"
+                               aria-controls="v-pills-messages" aria-selected="false">mySQL</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div>
+                        <div class="technologies-container technologies-container__back">
+                            <img id="laravel-item" style="max-width: 195px" class="" src="assets/img/laravel-item.png" alt="">
+                            <img id="php-item" class="" src="assets/img/php-item.svg" alt="">
+                            <img id="mySQL-item" style="max-width: 195px" class="" src="assets/img/mySQL-item.png" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1087,7 +1139,7 @@
                                 </div>
                                 <div class="other-jobs__container-text">
                                     <span>Stooller</span>
-                                    <p>While you progress through the questions on our personalised price calculator, we keep updating the price for your booking. At the end of the process we give you a fixed price for your relocation.</p>
+                                    <p>While you progress through the questions on our personalised price calculator, we keep updating the price for your booking.</p>
                                 </div>
                             </div>
                         </div>
@@ -1100,7 +1152,7 @@
                                 </div>
                                 <div class="other-jobs__container-text">
                                     <span>Ansy Gallery</span>
-                                    <p>Ansy Carpet Company – крупнейший магазин элитных ковров в Москве, созданный в 1992 году искусствоведами антикварного бутика и декораторами столичной дизайн-студии.</p>
+                                    <p>Ansy Carpet Company – крупнейший магазин элитных ковров в Москве, созданный в 1992 году</p>
                                 </div>
                             </div>
                         </div>
@@ -1163,6 +1215,17 @@
 <script src="assets/js/bootstrap/bootstrap.min.js"></script>
 <script src="assets/js/slick/slick.min.js"></script>
 <script src="assets/js/wow/wow.min.js"></script>
+<script src="assets/js/jquery-circle-progress/circle-progress.min.js"></script>
+<script src="assets/js/jquery-appear-original/index.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
+
+
+
 <script src="assets/js/main.js"></script>
 <script>
         $('.first-slide-carousel').slick({
@@ -1177,34 +1240,29 @@
 
         new WOW().init();
 
-        let tabId = ['#v-pills-home-tab1', '#v-pills-profile-tab1', '#v-pills-messages-tab1', '#v-pills-settings-tab1', '#v-pills-settings-tab2'];
-        let imgId = ['#bootstrap-item', '#sass-item', '#html-item', '#css-item', '#vue-item'];
 
-        for(let i = 0; i <= tabId.length; i++) {
-            $(tabId[i]).click(function () {
-                $('.technologies-container img').removeClass('active');
-                $(imgId[i]).toggleClass('active');
-                $('.technologies-description').removeClass('show');
-            })
-        }
 
-        for(let i = 0; i <= imgId.length; i++) {
-            $(imgId[i]).click(function () {
-                $(tabId[i]).click();
-                $('.technologies-description').removeClass('show');
-            });
-        }
 
-        $('.technologies-block__close').click(function () {
-            $('.tab-pane').removeClass('show').removeClass('active');
-            $('.nav-link').removeClass('active');
-            $('.technologies-container img').removeClass('active');
-            $('.technologies-description').addClass('show');
+        var el = $('#circle'),
+            inited = false;
+
+        el.appear({ force_process: true });
+
+        el.on('appear', function() {
+            if (!inited) {
+                el.circleProgress({
+                    value: 0.75,
+                    size: 187,
+                    thickness: 30,
+                    startAngle: 0,
+                    lineCap: 'round',
+                    fill: {
+                        gradient: ["#F7DD7F", "#ECCE61"],
+                    }
+                });
+                inited = true;
+            }
         });
-
-        // $('.nav-link').click(function () {
-        //     $('.technologies-description').removeClass('show');
-        // })
 
 </script>
 </body>
