@@ -61,6 +61,26 @@
   width: 309px;
   height: 315px;
   display: block;
+  //transition: 1s;
+  animation-name: rotateDiagram;
+  animation-duration: 60s;
+  animation-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+  animation-iteration-count: infinite;
+
+  //&:hover {
+  //  transform: rotate(360deg);
+  //  transition: 1s;
+  //}
+}
+
+@keyframes rotateDiagram {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .design-system__diagram-list {

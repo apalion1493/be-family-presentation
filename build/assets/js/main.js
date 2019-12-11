@@ -3,7 +3,6 @@
 // = wow/wow.min.js
 
 $(function() {
-    //  changes mouse cursor when highlighting loawer right of box
     $(".write-ToUs__form-control-comment").mousemove(function(e) {
         var myPos = $(this).offset();
         myPos.bottom = $(this).offset().top + $(this).outerHeight();
@@ -16,13 +15,10 @@ $(function() {
             $(this).css({ cursor: "" });
         }
     })
-    //  the following simple make the textbox "Auto-Expand" as it is typed in
         .keyup(function(e) {
-            //  this if statement checks to see if backspace or delete was pressed, if so, it resets the height of the box so it can be resized properly
             if (e.which === 8 || e.which === 46) {
                 $(this).height(parseFloat($(this).css("min-height")) !== 0 ? parseFloat($(this).css("min-height")) : parseFloat($(this).css("font-size")));
             }
-            //  the following will help the text expand as typing takes place
             while($(this).outerHeight() < this.scrollHeight + parseFloat($(this).css("borderTopWidth")) + parseFloat($(this).css("borderBottomWidth"))) {
                 $(this).height($(this).height()+1);
             }
@@ -36,81 +32,49 @@ jQuery(document).ready(function(){
     });
 });
 
-////////////////////
-
 var DragManager = new function() {
 
-    /**
-     * составной объект для хранения информации о переносе:
-     * {
-     *   elem - элемент, на котором была зажата мышь
-     *   avatar - аватар
-     *   downX/downY - координаты, на которых был mousedown
-     *   shiftX/shiftY - относительный сдвиг курсора от угла элемента
-     * }
-     */
     var dragObject = {};
 
     var self = this;
 
     function onMouseDown(e) {
-
         if (e.which != 1) return;
-
         var elem = e.target.closest('.censorship');
         if (!elem) return;
-
         dragObject.elem = elem;
-
-        // запомним, что элемент нажат на текущих координатах pageX/pageY
         dragObject.downX = e.pageX;
         dragObject.downY = e.pageY;
-
         return false;
     }
 
     function onMouseMove(e) {
-        if (!dragObject.elem) return; // элемент не зажат
-
-        if (!dragObject.avatar) { // если перенос не начат...
+        if (!dragObject.elem) return;
+        if (!dragObject.avatar) {
             var moveX = e.pageX - dragObject.downX;
             var moveY = e.pageY - dragObject.downY;
-
-            // если мышь передвинулась в нажатом состоянии недостаточно далеко
             if (Math.abs(moveX) < 3 && Math.abs(moveY) < 3) {
                 return;
             }
-
-            // начинаем перенос
-            dragObject.avatar = createAvatar(e); // создать аватар
-            if (!dragObject.avatar) { // отмена переноса, нельзя "захватить" за эту часть элемента
+            dragObject.avatar = createAvatar(e);
+            if (!dragObject.avatar) {
                 dragObject = {};
                 return;
             }
-
-            // аватар создан успешно
-            // создать вспомогательные свойства shiftX/shiftY
             var coords = getCoords(dragObject.avatar);
             dragObject.shiftX = dragObject.downX - coords.left;
             dragObject.shiftY = dragObject.downY - coords.top;
-
-            startDrag(e); // отобразить начало переноса
+            startDrag(e);
         }
-
-        // отобразить перенос объекта при каждом движении мыши
         dragObject.avatar.style.left = e.pageX - dragObject.shiftX + 'px';
         dragObject.avatar.style.top = e.pageY - dragObject.shiftY + 'px';
-
         return false;
     }
 
     function onMouseUp(e) {
-        if (dragObject.avatar) { // если перенос идет
+        if (dragObject.avatar) {
             finishDrag(e);
         }
-
-        // перенос либо не начинался, либо завершился
-        // в любом случае очистим "состояние переноса" dragObject
         dragObject = {};
     }
 
@@ -125,8 +89,6 @@ var DragManager = new function() {
     }
 
     function createAvatar(e) {
-
-        // запомнить старые свойства, чтобы вернуться к ним при отмене переноса
         var avatar = dragObject.elem;
         var old = {
             parent: avatar.parentNode,
@@ -136,8 +98,6 @@ var DragManager = new function() {
             top: avatar.top || '',
             zIndex: avatar.zIndex || ''
         };
-
-        // функция для отмены переноса
         avatar.rollback = function() {
             old.parent.insertBefore(avatar, old.nextSibling);
             avatar.style.position = old.position;
@@ -145,34 +105,23 @@ var DragManager = new function() {
             avatar.style.top = old.top;
             avatar.style.zIndex = old.zIndex
         };
-
         return avatar;
     }
 
     function startDrag(e) {
         var avatar = dragObject.avatar;
-
-        // инициировать начало переноса
         document.body.appendChild(avatar);
         avatar.style.zIndex = 9999;
         avatar.style.position = 'absolute';
     }
 
     function findDroppable(event) {
-        // спрячем переносимый элемент
         dragObject.avatar.hidden = true;
-
-        // получить самый вложенный элемент под курсором мыши
         var elem = document.elementFromPoint(event.clientX, event.clientY);
-
-        // показать переносимый элемент обратно
         dragObject.avatar.hidden = false;
-
         if (elem == null) {
-            // такое возможно, если курсор мыши "вылетел" за границу окна
             return null;
         }
-
         return elem.closest('.droppable');
     }
 
@@ -185,8 +134,7 @@ var DragManager = new function() {
 
 };
 
-
-function getCoords(elem) { // кроме IE8-
+function getCoords(elem) {
     var box = elem.getBoundingClientRect();
 
     return {
@@ -260,15 +208,6 @@ $('.technologies-block__close-back').click(function () {
 });
 
 
-
-
-// var controller = new ScrollMagic.Controller();
-// var scene = new ScrollMagic.Scene({
-//     triggerElement: "#trigger"
-// })
-//     .setTween("#animate1", 0.5, {scale: 2.5}) // trigger a TweenMax.to tween
-//     .addIndicators() // add indicators (requires plugin)
-//     .addTo(controller);
 
 
 var controller = new ScrollMagic.Controller();
