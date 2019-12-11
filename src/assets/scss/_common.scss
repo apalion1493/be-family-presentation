@@ -58,6 +58,12 @@ h3, .h3 {
   font-weight: bold;
 }
 
+.golden-ratio {
+  position: relative;
+  opacity: 0;
+  top: 100px;
+}
+
 @media (max-width: 767.98px) {
   html, body {
     font-size: 14px;
