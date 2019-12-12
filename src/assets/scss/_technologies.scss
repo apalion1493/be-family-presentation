@@ -86,6 +86,7 @@
 }
 
 .technologies-container__back {
+  max-width: 460px;
   img:nth-child(1) {
     top: 0;
     margin-left: 0;
@@ -199,4 +200,88 @@
 .technologies__container {
   position: relative;
   margin-top: 140px;
+}
+
+@media (max-width: 1199.98px) {
+  //.technologies__container {
+  //  margin-top: 0;
+  //}
+
+  //.adaptability__title {
+  //  margin-bottom: 0;
+  //}
+
+  .technologies-container {
+    //margin-top: 110px;
+    //margin-left: auto;
+    //margin-right: auto;
+
+    img {
+      width: 140px;
+    }
+  }
+
+  .technologies__container {
+    margin-top: 60px;
+  }
+
+  //.technologies-description {
+  //  padding-top: 25px;
+  //}
+
+  .technologies .nav-pills .nav-link {
+    font-size: 14px;
+  }
+
+  .technologies .nav a {
+    margin-right: 7px;
+  }
+
+  .technologies-container__front {
+    max-width: 100%;
+  }
+
+  .technologies-container__front img:nth-child(2) {
+    margin-left: 70px;
+    z-index: 2;
+  }
+
+  .technologies-container__front img:nth-child(3) {
+    margin-left: 138px;
+    z-index: 3;
+  }
+
+  .technologies-container__front img:nth-child(4) {
+    margin-left: 207px;
+    z-index: 4;
+  }
+
+  .technologies-container__front img:nth-child(5) {
+    margin-left: 270px;
+    z-index: 5;
+  }
+
+  .technologies-container__back img:nth-child(2) {
+    margin-left: 90px;
+    z-index: 1;
+  }
+
+  .technologies-container__back img:nth-child(3) {
+    margin-left: 182px;
+    z-index: 2;
+  }
+
+  .technologies-description__text {
+    font-size: 22px;
+    line-height: 29px;
+  }
+
+  .technologies-description__title {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+
+  .technologies {
+    padding-bottom: 40px;
+  }
 }

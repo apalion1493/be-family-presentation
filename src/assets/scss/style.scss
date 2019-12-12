@@ -2,6 +2,11 @@
 @import "slick/slick";
 @import "slick/slick-theme";
 @import "animate/animate";
+@import "simpleLightbox/simpleLightbox";
+@import "owl/owl.carousel";
+@import "owl/owl.theme.default";
+
+
 @import "common";
 @import "header";
 @import "first-slide";
@@ -23,3 +28,4 @@
 @import "other-jobs";
 @import "writeToUs";
 @import "preloader";
+@import "menu-modal";

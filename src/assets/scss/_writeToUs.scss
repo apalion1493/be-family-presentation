@@ -47,7 +47,8 @@ textarea {
   max-width: 420px;
   width: 100%;
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 36px;
+  font-size: 14px;
 }
 
 .write-ToUs__form-control:focus {
@@ -65,21 +66,21 @@ textarea {
 .write-ToUs__form-control-name {
   background-image: url("../img/sections/write-ToUs/male.svg");
   background-repeat: no-repeat;
-  background-position: 14px 2px;
+  background-position: 14px 4px;
   background-size: 18px 18px;
 }
 
 .write-ToUs__form-control-phone {
   background-image: url("../img/sections/write-ToUs/phone-receiver.svg");
   background-repeat: no-repeat;
-  background-position: 14px 2px;
+  background-position: 14px 5px;
   background-size: 18px 18px;
 }
 
 .write-ToUs__form-control-comment {
   background-image: url("../img/sections/write-ToUs/pen.svg");
   background-repeat: no-repeat;
-  background-position: 14px 2px;
+  background-position: 14px 4px;
   background-size: 18px 18px;
 }
 
@@ -206,6 +207,18 @@ textarea {
 .parallax > use:nth-child(3) {
   animation-delay: -4s;
   animation-duration: 3s;
+}
+
+.write-ToUs__list-text {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+
+  &:hover {
+    color: #ffffff;
+    text-decoration: none;
+  }
 }
 
 @keyframes move-forever {

@@ -125,8 +125,12 @@
   flex-direction: column;
   min-height: 85vh;
 
-  .row {
-    margin-top: auto;
-    margin-bottom: auto;
-  }
+  //.row {
+  //  margin-top: auto;
+  //  margin-bottom: auto;
+  //}
+}
+
+.first-slide-wrap {
+  position: absolute;
 }

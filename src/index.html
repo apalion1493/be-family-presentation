@@ -10,9 +10,10 @@
 
 
 </head>
+
 <body id="element">
 
-<main>
+<main class="app" id="app">
     <section class="section first-slide">
         <div class="container header">
             <div class="row">
@@ -23,16 +24,18 @@
                     </div>
                 </div>
                 <div class="col-7">
-                    <div class="menu-burger">
-                        <span class="menu-burger__icon menu-burger__icon-first"></span>
-                        <span class="menu-burger__icon menu-burger__icon-second"></span>
-                        <span class="menu-burger__icon menu-burger__icon-three"></span>
+                    <div class="main-menu">
+                        <div class="burger" id="burger">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="container first-slide-section d-flex flex-column">
-            <div class="row my-auto">
+            <div class="row">
                 <div class="col-6">
                     <div class="main-text">
                         <span class="main-text__title-first">Помогаем создать</span>
@@ -41,19 +44,27 @@
                     </div>
                 </div>
                 <div class="col-6">
-                    <div>
+                    <div class="position-relative">
                         <div class="vector-first-slide-block">
                             <span class="vector-first-slide vector-first-slide_turquoise wow fadeIn" data-wow-delay="0.2s"></span>
                             <span class="vector-first-slide vector-first-slide_orange wow fadeIn" data-wow-delay="0.4s"></span>
                             <span class="vector-first-slide vector-first-slide_purple wow fadeIn" data-wow-delay="0.6s"></span>
                         </div>
-                        <div class="first-slide-wrap">
-                            <div class="first-slide-carousel wow fadeIn" data-wow-delay="0.8s">
-                                <span class="first-slide-carousel__img" style="background-image: url(assets/img/header-1.png)"></span>
-                                <span class="first-slide-carousel__img" style="background-image: url(assets/img/header-2.png)"></span>
-                                <span class="first-slide-carousel__img" style="background-image: url(assets/img/header-1.png)"></span>
-                                <span class="first-slide-carousel__img" style="background-image: url(assets/img/header-2.png)"></span>
+                        <div class="first-slide-wrap wow fadeIn" data-wow-delay="0.8s">
+                            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <span class="first-slide-carousel__img" style="background-image: url(assets/img/header-1.png)"></span>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <span class="first-slide-carousel__img" style="background-image: url(assets/img/header-2.png)"></span>
+                                    </div>
+                                </div>
                             </div>
+                            <!--<div class="first-slide-carousel owl-carousel owl-theme wow fadeIn" data-wow-delay="0.8s">-->
+                                <!--<span class="first-slide-carousel__img" style="background-image: url(assets/img/header-1.png)"></span>-->
+                                <!--<span class="first-slide-carousel__img" style="background-image: url(assets/img/header-2.png)"></span>-->
+                            <!--</div>-->
                         </div>
                     </div>
                 </div>
@@ -995,19 +1006,29 @@
                 <div class="col-12">
                     <div class="sketches-list">
                         <div class="sketches-item float-md-left">
-                            <img class="w-100" src="assets/img/sketches-1.jpg" alt="">
+                            <a href="assets/img/sketches-1-3x.jpg">
+                                <img class="w-100" src="assets/img/sketches-1.jpg" alt="">
+                            </a>
                         </div>
                         <div class="sketches-item float-md-right">
-                            <img class="w-100" src="assets/img/sketches-2.jpg" alt="">
+                            <a href="assets/img/sketches-2-3x.jpg">
+                                <img class="w-100" src="assets/img/sketches-2.jpg" alt="">
+                            </a>
                         </div>
                         <div class="sketches-item float-md-right">
-                            <img class="w-100" src="assets/img/sketches-4.jpg" alt="">
+                            <a href="assets/img/sketches-4-3x.jpg">
+                                <img class="w-100" src="assets/img/sketches-4.jpg" alt="">
+                            </a>
                         </div>
                         <div class="sketches-item float-md-left">
-                            <img class="w-100" src="assets/img/sketches-3.jpg" alt="">
+                            <a href="assets/img/sketches-3-3x.jpg">
+                                <img class="w-100" src="assets/img/sketches-3.jpg" alt="">
+                            </a>
                         </div>
                         <div class="sketches-item float-md-left">
-                            <img class="w-100" src="assets/img/sketches-5.jpg" alt="">
+                            <a href="assets/img/sketches-5-3x.jpg">
+                                <img class="w-100" src="assets/img/sketches-5.jpg" alt="">
+                            </a>
                         </div>
                         <div class="clearfix"></div>
                     </div>
@@ -1066,16 +1087,14 @@
             <h2 class="h2 h2-title text-center adaptability__title">иСПОЛЬЗУЕМЫЕ ТЕхНОЛОГИИ</h2>
             <div class="row">
                 <div class="col-6">
-                    <div>
-                        <div class="technologies-container technologies-container__front">
-                            <img id="bootstrap-item" class="" src="assets/img/bootstrap-item.svg" alt="">
-                            <img id="sass-item" class="" src="assets/img/sass-item.svg" alt="">
-                            <img id="html-item" class="" src="assets/img/html-item.svg" alt="">
-                            <img id="css-item" class="" src="assets/img/css-item.svg" alt="">
-                            <img id="vue-item" class="" src="assets/img/vue-item.svg" alt="">
-                        </div>
+                    <div class="technologies-container technologies-container__front">
+                        <img id="bootstrap-item" class="" src="assets/img/bootstrap-item.svg" alt="">
+                        <img id="sass-item" class="" src="assets/img/sass-item.svg" alt="">
+                        <img id="html-item" class="" src="assets/img/html-item.svg" alt="">
+                        <img id="css-item" class="" src="assets/img/css-item.svg" alt="">
+                        <img id="vue-item" class="" src="assets/img/vue-item.svg" alt="">
                     </div>
-                </div>
+                </div><!-- order-1 order-xl-1-->
                 <div class="col-6">
                     <div class="row">
                         <div class="col-12 technologies__container">
@@ -1137,9 +1156,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div><!--  order-2 order-xl-2-->
 
-                <div class="col-6">
+                <div class="col-6 ">
                     <div class="col-12 technologies__container">
                         <div class="technologies-description technologies-description_back show">
                             <span class="technologies-description__title">Backend</span>
@@ -1179,16 +1198,14 @@
                                aria-controls="v-pills-messages" aria-selected="false">mySQL</a>
                         </div>
                     </div>
-                </div>
-                <div class="col-6">
-                    <div>
-                        <div class="technologies-container technologies-container__back">
-                            <img id="laravel-item" style="max-width: 195px" class="" src="assets/img/laravel-item.png" alt="">
-                            <img id="php-item" class="" src="assets/img/php-item.svg" alt="">
-                            <img id="mySQL-item" style="max-width: 195px" class="" src="assets/img/mySQL-item.png" alt="">
-                        </div>
+                </div><!-- order-4 order-xl-3-->
+                <div class="col-6 ">
+                    <div class="technologies-container technologies-container__back">
+                        <img id="laravel-item" style="max-width: 195px" class="" src="assets/img/laravel-item.png" alt="">
+                        <img id="php-item" class="" src="assets/img/php-item.svg" alt="">
+                        <img id="mySQL-item" style="max-width: 195px" class="" src="assets/img/mySQL-item.png" alt="">
                     </div>
-                </div>
+                </div><!--order-3 order-xl-4-->
             </div>
         </div>
     </section>
@@ -1200,7 +1217,7 @@
                 <div class="col-sm-12 col-lg-6 other-jobs__padding">
                     <div class="other-jobs__container other-jobs__container-vput">
                         <div class="other-jobs__container-img other-jobs__container-vput-img">
-                            <a class="d-flex justify-content-center" data-tilt="" href="#" style="will-change: transform; transform: perspective(300px) rotateX(0deg) rotateY(0deg);">
+                            <a class="d-flex justify-content-center" data-tilt href="#" style="will-change: transform; transform: perspective(300px) rotateX(0deg) rotateY(0deg);">
                                 <img src="assets/img/vput-main-img.png" alt="">
                             </a>
                         </div>
@@ -1228,7 +1245,7 @@
                         <div class="col-12 col-sm-6 other-jobs__padding">
                             <div class="other-jobs__container other-jobs__container-ansy">
                                 <div class="other-jobs__container-img other-jobs__container-ansy-img">
-                                    <a class="w-100 d-flex justify-content-center" data-tilt="" href="#" style="will-change: transform; transform: perspective(300px) rotateX(0deg) rotateY(0deg);">
+                                    <a class="w-100 d-flex justify-content-center" data-tilt href="#" style="will-change: transform; transform: perspective(300px) rotateX(0deg) rotateY(0deg);">
                                         <img src="assets/img/ansy-main-img.png" alt="">
                                     </a>
                                 </div>
@@ -1246,21 +1263,34 @@
     </section>
     <section id="write-ToUs" class="section flex-column align-items-center">
         <div class="container d-flex flex-column align-items-center">
-            <h2 class="text-center ">Хотите подобный проект?</h2>
+            <h2 class="text-center text-uppercase">Хотите подобный проект?</h2>
             <div class="row write-ToUs__row">
                 <div class="col-sm-12 mb-5 mb-md-0 col-md-6">
                     <div class="write-ToUs__block-contact">
                         <span class="write-ToUs__title">Контакты для связи</span>
                         <ul class="write-ToUs__list">
                             <li>
-                                <span>Phone:</span> <p class="write-ToUs__list-text">+373 (69) 377 248 &emsp;Moldova</p>
+                                <span>Phone:</span>
+                                <div class="flex-column d-flex">
+                                    <a href="tel:+37369377248" class="write-ToUs__list-text">+373 (69) 377 248 &emsp;Moldova</a>
+                                    <a href="tel:+37377785704" class="write-ToUs__list-text">+373 (77) 785 704 &emsp;Moldova</a>
+                                    <a href="tel:+74957893648" class="write-ToUs__list-text">+749 (69) 377 248 &emsp;Moldova</a>
+                                </div>
                             </li>
+
                             <li>
-                                <span>Email:</span> <p class="write-ToUs__list-text">a.popov@webdelo.org</p>
+                                <span>Email:</span>
+                                <div class="flex-column d-flex">
+                                    <a href="mailto:info@webdelo.org" class="write-ToUs__list-text">info@webdelo.org</a>
+                                    <a href="mailto:a.popov@webdelo.org" class="write-ToUs__list-text">a.popov@webdelo.org</a>
+                                    <a href="mailto:seo@webdelo.org" class="write-ToUs__list-text">seo@webdelo.org</a>
+                                </div>
                             </li>
+
                             <li>
                                 <span>Skype:</span> <p class="write-ToUs__list-text">webdelo.org</p>
                             </li>
+
                             <li>
                                 <span>Address:</span> <p class="write-ToUs__list-text">Moldova, Bender, 28 Suvorov st. Business Center "Sheriff", office 38</p>
                             </li>
@@ -1292,78 +1322,105 @@
         <button type="submit" class="btn blue-btn-form ">ЗАПОЛНИТЬ БРИФ</button>
     </section>
 </main>
+<section class="section menu-modal" id="menu-modal">
+    <div class="menu-modal-wrapper">
+        <div class="container">
+            <div class="row menu-modal__header">
+                <div class="col-8 col-md-5">
+                    <div class="logo-container">
+                        <a class="logo-main logo-main_mr" href="https://webdelo.org/"></a>
+                    </div>
+                </div>
+                <div class="col-4 col-md-7">
+                    <span id="main-menu-close" class="main-menu-close"><span>Закрыть</span><i></i></span>
+                </div>
+            </div>
+
+            <div class="row position-static">
+                <div class="col-md-6">
+                    <div class="menu-modal__block">
+                        <ul class="menu-modal__list">
+                            <li class="menu-modal__item">
+                                <a href="#" class="menu-modal__item-text">Главная</a>
+                            </li>
+                            <li class="menu-modal__item">
+                                <a href="#" class="menu-modal__item-text">Проекты</a>
+                            </li>
+                            <li class="menu-modal__item">
+                                <a href="#" class="menu-modal__item-text">О нас</a>
+                            </li>
+                            <li class="menu-modal__item">
+                                <a href="#" class="menu-modal__item-text">Связаться с нами</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 position-static__list">
+                    <div class="position-static__list-wrapper">
+                        <span class="position-static__list-title">Другие продукты</span>
+                        <div class="menu-modal__products owl-carousel owl-theme">
+                            <a class="menu-modal__product" href="#">
+                                <div class="menu-modal__product-img">
+                                    <img src="assets/img/vput-mobil-img.jpg" alt="">
+                                </div>
+                                <span class="menu-modal__product-title">V.P.U.T.</span>
+                                <p class="menu-modal__product-text">While you progress through the questions on our personalised price calculator, we keep updating the price for your booking.</p>
+                            </a>
+                            <a class="menu-modal__product" href="#">
+                                <div class="menu-modal__product-img">
+                                    <img src="assets/img/stooler-mobil-img.jpg" alt="">
+                                </div>
+                                <span class="menu-modal__product-title">Stooller</span>
+                                <p class="menu-modal__product-text">While you progress through the questions on our personalised price calculator, we keep updating the price for your booking.</p>
+                            </a>
+                            <a class="menu-modal__product" href="#">
+                                <div class="menu-modal__product-img">
+                                    <img src="assets/img/ansy-gallery-img.jpg" alt="">
+                                </div>
+                                <span class="menu-modal__product-title">Ansy Gallery</span>
+                                <p class="menu-modal__product-text">While you progress through the questions on our personalised price calculator, we keep updating the price for your booking.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
 
 <script src="assets/js/jquery/jquery.min.js"></script>
 <script src="assets/js/bootstrap/bootstrap.min.js"></script>
-<script src="assets/js/slick/slick.min.js"></script>
+<!--<script src="assets/js/slick/slick.min.js"></script>-->
+<script src="assets/js/owl/owl.carousel.min.js"></script>
+<script src="assets/js/tilt/tilt.jquery.min.js"></script>
+<script src="assets/js/simpleLightbox/simpleLightbox.min.js"></script>
 <script src="assets/js/wow/wow.min.js"></script>
 <script src="assets/js/jquery-circle-progress/circle-progress.min.js"></script>
 <script src="assets/js/jquery-appear-original/index.js"></script>
-
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
 
-
-
 <script src="assets/js/main.js"></script>
 <script>
-        $('.first-slide-carousel').slick({
-            dots: false,
-            infinite: true,
-            arrows: false,
-            speed: 500,
-            fade: true,
-            autoplay: true,
-            cssEase: 'linear'
-        });
 
-        new WOW().init();
+    $('.owl-carousel').owlCarousel({
+        margin:27,
+        loop:false,
+        autoWidth:true,
+        items:1,
+        nav: false,
+        dots: false,
+    });
 
+    new WOW().init();
 
-
-
-        var el  = $('#circle'),
-            el2 = $('#circle2'),
-            inited = false,
-            inited2 = false;
-
-        el.appear({ force_process: true });
-        el2.appear({ force_process: true });
-
-        el.on('appear', function() {
-            if (!inited) {
-                el.circleProgress({
-                    value: 0.75,
-                    size: 187,
-                    thickness: 30,
-                    startAngle: 0,
-                    lineCap: 'round',
-                    fill: {
-                        gradient: ["#F7DD7F", "#ECCE61"],
-                    }
-                });
-                inited = true;
-            }
-        });
-
-        el2.on('appear', function() {
-            if (!inited2) {
-                el2.circleProgress({
-                    value: 1,
-                    size: 187,
-                    thickness: 30,
-                    startAngle: 0,
-                    lineCap: 'round',
-                    fill: {
-                        color: '#F2205F'
-                    }
-                });
-                inited2 = true;
-            }
-        });
+    $('.sketches-list a').simpleLightbox();
 
 </script>
 </body>

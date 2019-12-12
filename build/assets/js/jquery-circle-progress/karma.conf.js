@@ -1,1 +1,0 @@
-module.exports=function(s){s.set({frameworks:["qunit"],files:[{pattern:"tests/images/circle.png",served:!0,watched:!1,included:!1},"node_modules/jquery/dist/jquery.min.js","dist/circle-progress.js","tests/test_utils.js","tests/tests.js"],browsers:["Firefox","PhantomJS"],singleRun:!0})};

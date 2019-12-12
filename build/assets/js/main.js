@@ -2,6 +2,18 @@
 // = bootstrap/bootstrap.min.js
 // = wow/wow.min.js
 
+$('#burger').click(function () {
+    $('.menu-modal').addClass('active');
+    $('#app').addClass('active');
+    $('body').addClass('active');
+});
+
+$('#main-menu-close').click(function () {
+    $('.menu-modal').removeClass('active');
+    $('#app').removeClass('active');
+    $('body').removeClass('active');
+});
+
 $(function() {
     $(".write-ToUs__form-control-comment").mousemove(function(e) {
         var myPos = $(this).offset();
@@ -24,7 +36,6 @@ $(function() {
             }
         });
 });
-
 
 jQuery(document).ready(function(){
     jQuery('.menu-burger').click(function () {
@@ -157,11 +168,10 @@ DragManager.onDragEnd = function(dragObject, dropElem) {
 };
 
 
-let tabId1 = ['#v-pills-home-tab1', '#v-pills-profile-tab1', '#v-pills-messages-tab1', '#v-pills-settings-tab1', '#v-pills-settings-tab2'];
-let imgId1 = ['#bootstrap-item', '#sass-item', '#html-item', '#css-item', '#vue-item'];
-
-let tabId2 = ['#v-pills-home-tab2', '#v-pills-profile-tab2', '#v-pills-messages-tab2'];
-let imgId2 = ['#laravel-item', '#php-item', '#mySQL-item'];
+let tabId1 = ['#v-pills-home-tab1', '#v-pills-profile-tab1', '#v-pills-messages-tab1', '#v-pills-settings-tab1', '#v-pills-settings-tab2'],
+    imgId1 = ['#bootstrap-item', '#sass-item', '#html-item', '#css-item', '#vue-item'],
+    tabId2 = ['#v-pills-home-tab2', '#v-pills-profile-tab2', '#v-pills-messages-tab2'],
+    imgId2 = ['#laravel-item', '#php-item', '#mySQL-item'];
 
 for(let i = 0; i <= tabId1.length; i++) {
     $(tabId1[i]).click(function () {
@@ -207,9 +217,6 @@ $('.technologies-block__close-back').click(function () {
     $('.technologies-description_back').addClass('show');
 });
 
-
-
-
 var controller = new ScrollMagic.Controller();
 var tween1,
     tween2,
@@ -250,3 +257,44 @@ var scene5 = new ScrollMagic.Scene({triggerElement: "#trigger_golden-ratio", dur
     .setTween(tween5)
     .addIndicators()
     .addTo(controller);
+
+
+var el  = $('#circle'),
+    el2 = $('#circle2'),
+    inited = false,
+    inited2 = false;
+
+el.appear({ force_process: true });
+el2.appear({ force_process: true });
+
+el.on('appear', function() {
+    if (!inited) {
+        el.circleProgress({
+            value: 0.75,
+            size: 187,
+            thickness: 30,
+            startAngle: 0,
+            lineCap: 'round',
+            fill: {
+                gradient: ["#F7DD7F", "#ECCE61"],
+            }
+        });
+        inited = true;
+    }
+});
+
+el2.on('appear', function() {
+    if (!inited2) {
+        el2.circleProgress({
+            value: 1,
+            size: 187,
+            thickness: 30,
+            startAngle: 0,
+            lineCap: 'round',
+            fill: {
+                color: '#F2205F'
+            }
+        });
+        inited2 = true;
+    }
+});
