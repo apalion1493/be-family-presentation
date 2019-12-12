@@ -3,17 +3,17 @@
   padding-top: 48px;
   padding-bottom: 55px;
   overflow: hidden;
+
+  &__title {
+    line-height: 49px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
 }
 
 .sketches-item {
   width: 49%;
   margin-bottom: 30px;
-}
-
-.sketches__title {
-  line-height: 49px;
-  text-transform: uppercase;
-  margin-bottom: 40px;
 }
 
 @media (max-width: 767.98px) {

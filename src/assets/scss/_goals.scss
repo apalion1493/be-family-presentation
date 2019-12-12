@@ -27,10 +27,10 @@
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
   border-radius: 17px;
   position: absolute;
-}
 
-.goals-device__preloader {
-  position: absolute;
+  &__preloader {
+    position: absolute;
+  }
 }
 
 .goals-device_tablet {

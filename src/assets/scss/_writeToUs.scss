@@ -15,18 +15,18 @@
   justify-content: center;
   overflow: hidden;
   position: relative;
-}
 
-#write-ToUs .container {
-  margin-top: auto;
-}
+  .container {
+    margin-top: auto;
+  }
 
-#write-ToUs h2 {
-  margin-bottom: 66px;
-  font-weight: bold;
-  font-size: 36px;
-  color: #FFFFFF;
-  margin-top: 78px;
+  h2 {
+    margin-bottom: 66px;
+    font-weight: bold;
+    font-size: 36px;
+    color: #FFFFFF;
+    margin-top: 78px;
+  }
 }
 
 textarea {
@@ -49,12 +49,12 @@ textarea {
   position: relative;
   margin-bottom: 36px;
   font-size: 14px;
-}
 
-.write-ToUs__form-control:focus {
-  box-shadow: none;
-  border-bottom: 1px solid #BCBCBC;
-  outline: none;
+  &:focus {
+    box-shadow: none;
+    border-bottom: 1px solid #BCBCBC;
+    outline: none;
+  }
 }
 
 .write-ToUs__form-control::-moz-placeholder {color: #D9D9D9;}
@@ -108,25 +108,25 @@ textarea {
   padding-left: 0;
   margin-top: 34px;
   margin-bottom: 50px;
-}
 
-.write-ToUs__list li {
-  list-style-type: none;
-  display: flex;
-  margin-bottom: 16px;
-}
+  li {
+    list-style-type: none;
+    display: flex;
+    margin-bottom: 16px;
 
-.write-ToUs__list li span {
-  min-width: 110px;
-  font-size: 18px;
-  color: #BBB5B8
-}
+    span {
+      min-width: 110px;
+      font-size: 18px;
+      color: #BBB5B8
+    }
 
-.write-ToUs__list li p {
-  margin-bottom: 0;
-  font-size: 18px;
-  font-weight: bold;
-  max-width: 340px;
+    p {
+      margin-bottom: 0;
+      font-size: 18px;
+      font-weight: bold;
+      max-width: 340px;
+    }
+  }
 }
 
 .write-ToUs__block-social {
@@ -141,10 +141,10 @@ textarea {
   height: 29px;
   display: block;
   margin-top: 9px;
-}
 
-.write-ToUs__block-social-icon:first-child {
-  margin-left: 0;
+  &:first-child {
+    margin-left: 0;
+  }
 }
 
 .write-ToUs__block-social-linkedin {
@@ -239,17 +239,17 @@ textarea {
   position: absolute;
   bottom: 0;
 }
+.parallax {
+  position: absolute;
+  bottom: 200px;
+}
+
 
 /*prevent many large-by-comparison ripples by shrinking the height*/
 @media (max-width: 50em) {
   .editorial {
     height: 17vw;
   }
-}
-
-.parallax {
-  position: absolute;
-  bottom: 200px;
 }
 
 @media (max-width: 767.98px) {

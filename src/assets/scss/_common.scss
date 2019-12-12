@@ -3,12 +3,6 @@ html, body {
   font-family: 'Roboto', sans-serif;
 }
 
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1254px;
-  }
-}
-
 .first-slide-wrap {
   padding-top: 115px;
   padding-left: 15px;
@@ -88,24 +82,6 @@ body.active {
   z-index: 100;
 }
 
-@media (max-width: 767.98px) {
-  html, body {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 575.98px) {
-  h2.h2 {
-    font-size: 2em;
-    line-height: 29px;
-  }
-
-  h3.h3 {
-    font-size: 1.8em;
-    line-height: 26px;
-  }
-}
-
 #circle {
   width: 187px;
   height: 195px;
@@ -126,5 +102,29 @@ body.active {
     font-size: 58px;
     line-height: 68px;
     color: #F2205F
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1254px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  html, body {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  h2.h2 {
+    font-size: 2em;
+    line-height: 29px;
+  }
+
+  h3.h3 {
+    font-size: 1.8em;
+    line-height: 26px;
   }
 }

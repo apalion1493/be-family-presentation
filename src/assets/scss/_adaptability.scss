@@ -1,12 +1,12 @@
 .adaptability {
   padding-top: 63px;
   padding-bottom: 60px;
-}
 
-.adaptability__title {
-  margin-bottom: 40px;
-  text-transform: uppercase;
-  line-height: 49px;
+  &__title {
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    line-height: 49px;
+  }
 }
 
 .adaptability-block {
@@ -24,51 +24,51 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
 
-.adaptability-drawing__border {
-  background: #777777;
-  min-width: 1px;
-  height: 23px;
-  display: block;
-}
+  &__border {
+    background: #777777;
+    min-width: 1px;
+    height: 23px;
+    display: block;
+  }
 
-.adaptability-drawing__content {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  bottom: 10px;
-}
+  &__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 10px;
+  }
 
-.adaptability-drawing__line {
-  width: 100%;
-  height: 6px;
-  display: block;
-}
+  &__line {
+    width: 100%;
+    height: 6px;
+    display: block;
+  }
 
-.adaptability-drawing__line-1 {
-  background: url("../img/adaptability-drawing__line.svg") no-repeat center;
-  background-size: 100% auto;
-}
+  &__line-1 {
+    background: url("../img/adaptability-drawing__line.svg") no-repeat center;
+    background-size: 100% auto;
+  }
 
-.adaptability-drawing__line-2 {
-  background: url("../img/adaptability-drawing__line-2.svg") no-repeat center;
-  background-size: 100% auto;
-}
+  &__line-2 {
+    background: url("../img/adaptability-drawing__line-2.svg") no-repeat center;
+    background-size: 100% auto;
+  }
 
-.adaptability-drawing__line-3 {
-  background: url("../img/adaptability-drawing__line-3.svg") no-repeat center;
-  background-size: 100% auto;
-}
+  &__line-3 {
+    background: url("../img/adaptability-drawing__line-3.svg") no-repeat center;
+    background-size: 100% auto;
+  }
 
-.adaptability-drawing__text {
-  font-weight: bold;
-  font-size: 1.125em;
-  line-height: 21px;
-  text-align: center;
-  color: #555555;
+  &__text {
+    font-weight: bold;
+    font-size: 1.125em;
+    line-height: 21px;
+    text-align: center;
+    color: #555555;
+  }
 }
 
 @media (max-width: 767.98px) {
