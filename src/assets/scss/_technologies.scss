@@ -3,6 +3,11 @@
   padding-top: 90px;
   padding-bottom: 97px;
 
+  &__title {
+    color: #555555;
+    font-weight: bold;
+  }
+
   .nav {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(75px, auto));
@@ -53,6 +58,12 @@
     position: relative;
     margin-top: 140px;
   }
+
+  &__container-wrapper {
+    max-width: 505px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .technologies-container__front {
@@ -94,6 +105,9 @@
 
 .technologies-container__back {
   max-width: 460px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px !important;
 
   img {
     &:nth-child(1) {
@@ -121,6 +135,7 @@
   height: 350px;
   margin-top: 60px;
   position: relative;
+  left: -36px;
 
   img {
     position: absolute;
@@ -280,5 +295,11 @@
     .nav-pills .nav-link {
       font-size: 14px;
     }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .technologies-container {
+    height: 208px;
   }
 }

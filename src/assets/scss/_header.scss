@@ -25,3 +25,13 @@
     top: 2px;
   }
 }
+
+@media (max-width: 767.98px) {
+  .header-logo {
+    max-width: 221px;
+
+    &__wd {
+      margin-right: 15px;
+    }
+  }
+}

@@ -168,7 +168,7 @@ DragManager.onDragEnd = function(dragObject, dropElem) {
 };
 
 
-let tabId1 = ['#v-pills-home-tab1', '#v-pills-profile-tab1', '#v-pills-messages-tab1', '#v-pills-settings-tab1', '#v-pills-settings-tab2'],
+var tabId1 = ['#v-pills-home-tab1', '#v-pills-profile-tab1', '#v-pills-messages-tab1', '#v-pills-settings-tab1', '#v-pills-settings-tab2'],
     imgId1 = ['#bootstrap-item', '#sass-item', '#html-item', '#css-item', '#vue-item'],
     tabId2 = ['#v-pills-home-tab2', '#v-pills-profile-tab2', '#v-pills-messages-tab2'],
     imgId2 = ['#laravel-item', '#php-item', '#mySQL-item'];

@@ -35,8 +35,22 @@ function styles() {
 
 function scripts() {
 
-    return gulp.src('./src/assets/js/**/*.js')
-        //.pipe(concat('main.js'))
+    return gulp.src([
+        'src/assets/js/libs/jquery/**/*.js',
+        'src/assets/js/libs/bootstrap/**/*.js',
+        'src/assets/js/libs/owl/**/*.js',
+        'src/assets/js/libs/tilt/**/*.js',
+        'src/assets/js/libs/simpleLightbox/**/*.js',
+        'src/assets/js/libs/wow/**/*.js',
+        'src/assets/js/libs/jquery-circle-progress/**/*.js',
+        'src/assets/js/libs/jquery-appear-original/**/*.js',
+        'src/assets/js/libs/gsap/**/*.js',
+        'src/assets/js/libs/scrollmagic/ScrollMagic.min.js',
+        'src/assets/js/libs/scrollmagic/debug.addIndicators.min.js',
+        'src/assets/js/libs/scrollmagic/animation.gsap.min.js',
+        'src/assets/js/main.js'
+    ])
+        .pipe(concat('libs.min.js'))
         .pipe(plumber())
         .pipe(rigger())
         .pipe(gulp.dest('./build/assets/js'))
@@ -55,13 +69,6 @@ function html() {
 
 function img() {
     return gulp.src('./src/assets/img/**/*.*')
-    //Optimization image size. Comment because take too many time for compilation. Uncomment prev last compilation
-        // .pipe(imagemin({
-        //     optimizationLevel: 3,
-        //     progressive: true,
-        //     svgoPlugins: [{removeViewBox: false}],
-        //     interlaced: true
-        // }))
         .pipe(gulp.dest('./build/assets/img'))
 }
 

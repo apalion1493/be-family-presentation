@@ -2,6 +2,13 @@
   position: relative;
   display: flex;
   overflow: hidden;
+
+  &__title {
+    text-transform: uppercase;
+    max-width: 685px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .goals-container {
@@ -126,7 +133,7 @@
     font-size: 1.6em;
     line-height: 37px;
     color: #555555;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
     display: block;
   }
 
@@ -162,6 +169,11 @@
   .goals-device_phone {
     right: -20px;
   }
+
+  .goals-content__text {
+    max-width: 100%;
+    margin-bottom: 35px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -174,20 +186,37 @@
   }
 
   .goals-device_tablet {
-    left: 20px;
+    left: auto;
+    right: -250px;
   }
 
   .goals-device_phone {
-    right: 20px;
+    right: auto;
+    left: -85px;
   }
 
   .goals-content__text {
     max-width: 100%;
-    margin-bottom: 30px;
+    align-items: flex-start;
+    margin-bottom: 35px;
+
+    .h5 {
+      font-size: 24px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 24px;
+    }
   }
 
   .goals-device_laptop {
-    display: none;
+
+  }
+
+  .goals-container {
+    padding-bottom: 20px;
   }
 }
 

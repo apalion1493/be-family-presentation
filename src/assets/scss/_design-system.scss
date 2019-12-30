@@ -1,9 +1,10 @@
 .design-system {
   padding-top: 76px;
-  padding-bottom: 60px;
+  padding-bottom: 50px;
   position: relative;
   z-index: 10;
   background: #ffffff;
+  overflow: hidden;
 
   .container {
     max-width: 1048px;
@@ -248,7 +249,7 @@
 
   &__rhythm-img {
     border-radius: 23px;
-    margin-top: 15px;
+    margin-top: 70px;
     max-width: 100%;
     width: 100%;
     overflow: hidden;
@@ -262,16 +263,6 @@
       margin: 5px;
       width: 100%;
     }
-  }
-
-  &__rhythm-title {
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 28px;
-    text-align: center;
-    display: block;
-    color: #777777;
-    margin-top: 27px;
   }
 
   &__rhythm-example {

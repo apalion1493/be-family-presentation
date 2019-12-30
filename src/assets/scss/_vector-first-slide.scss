@@ -3,29 +3,126 @@
   display: block;
 
   &_turquoise {
-    background: url("../img/vector-3.svg") no-repeat center;
-    background-size: 100% auto;
-    width: 669px;
-    height: 624px;
+    //background: url("../img/vector-3.svg") no-repeat center;
+    //background-size: 100% auto;
+    //width: 669px;
+    //height: 624px;
     top: 60px;
     left: 80px;
   }
 
   &_orange {
-    background: url("../img/vector-2.svg") no-repeat center;
-    background-size: 100% auto;
-    width: 606px;
-    height: 515px;
+    //background: url("../img/vector-2.svg") no-repeat center;
+    //background-size: 100% auto;
+    //width: 606px;
+    //height: 515px;
     top: 220px;
     left: 60px;
   }
 
   &_purple {
-    background: url("../img/vector-1.svg") no-repeat center;
-    background-size: 100% auto;
-    width: 528px;
-    height: 656px;
+    //background: url("../img/vector-1.svg") no-repeat center;
+    //background-size: 100% auto;
+    //width: 528px;
+    //height: 656px;
     top: 17px;
     left: 8px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .vector-first-slide {
+
+    &_turquoise {
+      //width: 669px;
+      //height: 624px;
+      top: 45px;
+      left: 72px;
+    }
+
+    &_orange {
+      //width: 606px;
+      //height: 515px;
+      top: 175px;
+      left: 52px;
+    }
+
+    &_purple {
+      //width: 528px;
+      //height: 656px;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .vector-first-slide {
+
+    &_turquoise {
+      //background-size: cover !important;
+      //width: 669px;
+      //height: 624px;
+      top: 45px;
+      left: -12px;
+    }
+
+    &_orange {
+      //background-size: cover !important;
+      //width: 606px;
+      //height: 515px;
+      top: 175px;
+      left: -32px;
+    }
+
+    &_purple {
+      //background-size: cover !important;
+
+      //width: 528px;
+      //height: 656px;
+      //top: 0;
+      //left: -80px;
+
+      //width: 100%;
+      //height: 360px;
+      top: 0;
+      left: -80px;
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .vector-first-slide {
+
+    &_turquoise {
+      //background-size: cover !important;
+      //width: 100%;
+      //height: 275px;
+
+      top: 20px;
+      left: 55px;
+
+      width: 100%;
+    }
+
+    &_orange {
+      //background-size: cover !important;
+      //width: 100%;
+      //height: 275px;
+      top: 110px;
+      left: 20px;
+
+      width: 100%;
+    }
+
+    &_purple {
+      //background-size: cover !important;
+      //width: 100%;
+      //height: 360px;
+      top: 0;
+      left: -30px;
+
+      width: 100%;
+    }
   }
 }
