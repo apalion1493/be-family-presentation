@@ -16,10 +16,16 @@
   margin-bottom: 30px;
   border-radius: 10px;
   overflow: hidden;
+
+
 }
 
 @media (max-width: 767.98px) {
   .sketches-item {
     width: 100%;
+
+    a {
+      pointer-events: none;
+    }
   }
 }
