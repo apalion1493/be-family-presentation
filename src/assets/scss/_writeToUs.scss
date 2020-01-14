@@ -265,13 +265,28 @@ textarea {
 
   .write-ToUs__title {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     font-size: 20px;
   }
 
   .write-ToUs__list li p {
     max-width: 100%;
   }
+
+  .btn.blue-btn-form {
+    margin-top: 50px;
+  }
+
+  #write-ToUs h2 {
+    text-align: left !important;
+    margin-top: 45px;
+    margin-bottom: 40px;
+  }
+
+  .write-ToUs__block-form p {
+    justify-content: flex-start !important;
+  }
+  
 }
 
 @media (max-width: 424.98px) {

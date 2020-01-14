@@ -14,7 +14,7 @@
   }
 
   .logo-main {
-    background: url("../../assets/img/logo-main-white.svg") no-repeat center;
+    background: url("../img/logo-main-white.svg") no-repeat center;
     background-size: 100% auto;
     width: 184px;
     height: 49px;
@@ -50,9 +50,9 @@
     color: #FFFFFF;
     text-decoration: none;
     background-image: linear-gradient(currentColor, currentColor);
-    background-position: 0% 100%;
+    background-position: 0 100%;
     background-repeat: no-repeat;
-    background-size: 0% 2px;
+    background-size: 0 2px;
     transition: background-size .3s;
 
     &:hover, &:focus {
@@ -109,7 +109,7 @@
   cursor: pointer;
 
   i {
-    background: url("../../assets/img/icon-close.svg") no-repeat center;
+    background: url("../img/icon-close.svg") no-repeat center;
     background-size: 100% auto;
     width: 18px;
     height: 18px;
@@ -119,7 +119,6 @@
 }
 
 .menu-modal__products {
-
   .menu-modal__product {
     display: flex;
     flex-direction: column;

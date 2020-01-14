@@ -298,4 +298,3 @@ el2.on('appear', function() {
         inited2 = true;
     }
 });
-

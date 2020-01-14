@@ -48,6 +48,7 @@ function scripts() {
         'src/assets/js/libs/scrollmagic/ScrollMagic.min.js',
         'src/assets/js/libs/scrollmagic/debug.addIndicators.min.js',
         'src/assets/js/libs/scrollmagic/animation.gsap.min.js',
+        'src/assets/js/libs/donutty/donutty.min.js',
         'src/assets/js/main.js'
     ])
         .pipe(concat('libs.min.js'))

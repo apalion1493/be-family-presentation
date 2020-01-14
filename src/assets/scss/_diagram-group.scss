@@ -34,3 +34,27 @@
     color: #777777;
   }
 }
+
+@media (max-width: 991.98px) {
+  .diagram-group__container {
+    canvas,  & > div {
+      width: 150px !important;
+      height: 150px !important;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .diagram-group__container {
+    margin-right: 11px;
+  }
+}
+
+@media (max-width: 340px) {
+  .diagram-group__container {
+    canvas,  & > div {
+      width: 140px !important;
+      height: 140px !important;
+    }
+  }
+}

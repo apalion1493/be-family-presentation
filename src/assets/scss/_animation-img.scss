@@ -19,3 +19,13 @@
   left: 160px;
   width: 35px;
 }
+
+@media (max-width: 767.98px) {
+  .animation-img-group img {
+    display: none;
+  }
+
+  .animation-img-group {
+    margin-top: 20px;
+  }
+}

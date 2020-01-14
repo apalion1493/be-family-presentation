@@ -58,7 +58,7 @@
   }
 
   .main-text__buttons {
-    margin-top: 30px;
+    margin-top: 150px;
     max-width: 100%;
   }
 }
@@ -72,5 +72,17 @@
     margin-top: 8px;
     margin-bottom: 0;
     line-height: 56px;
+  }
+
+  .main-text__buttons {
+    margin-top: 60px;
+
+    button {
+      font-size: 14px;
+
+      &:first-child {
+        margin-right: 15px;
+      }
+    }
   }
 }
